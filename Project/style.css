@@ -13,7 +13,7 @@ html{
 
 body{
   background: #ccc;
-  margin: 30px 50px ;
+  margin: 10px ;
   line-height: 1.4;
 }
 .btn{
@@ -59,14 +59,51 @@ wrapper{
   color: var(--light);
 }
 
-/* .top-container{
+ .top-container{
   display: grid;
   grid-gap: 20px;
+  grid-template-areas:
+  'showcase showcase sidebox-a'
+  'showcase showcase sidebox-b'
 
 }
-*/
+
+.showcase{
+  grid-area: showcase;
+  min-height: 290px;
+  background-image: url(image/theater.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  box-shadow: var(--shadow);
+
+}
+.showcase h4{
+  color: var(--light);
+  text-align: left;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.sidebox{
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.sidebox-a{
+  grid-area: sidebox-a;
+}
+
+.sidebox-b{
+  grid-area: sidebox-b;
+}
+
 .slider{
-  width: 1420px;
+  width: 1500px;
   height: 400px;
   background: url(./image/logo.png);
   animation: slide 20s infinite;
@@ -89,6 +126,13 @@ wrapper{
   }
 
 }
+
+.boxes{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:;
+}
+
 .box{
   background: var(--primary);
   padding: 1.5rem 2rem;
