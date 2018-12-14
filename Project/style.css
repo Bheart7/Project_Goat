@@ -69,12 +69,13 @@ wrapper{
 }
 
 .showcase{
+  margin-top: 20px;
   grid-area: showcase;
-  min-height: 290px;
+  min-height: 400px;
   background-image: url(image/theater.jpg);
   background-size: cover;
   background-position: center;
-  padding: 10px;
+  padding: 20px;
   box-shadow: var(--shadow);
 
 }
@@ -86,6 +87,7 @@ wrapper{
 }
 
 .sidebox{
+  margin-top: 20px;
   background: var(--primary);
   display: grid;
   align-items: center;
@@ -100,6 +102,11 @@ wrapper{
 
 .sidebox-b{
   grid-area: sidebox-b;
+}
+
+.btn-1{
+  padding:10px;
+  text-align: center;
 }
 
 .slider{
@@ -128,6 +135,7 @@ wrapper{
 }
 
 .boxes{
+  margin-top: 20px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns:;
