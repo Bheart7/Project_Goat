@@ -136,13 +136,20 @@ wrapper{
 
 .boxes{
   margin-top: 20px;
-  display: grid;
+  display: block;
   grid-gap: 20px;
-  grid-template-columns:;
 }
 
 .box{
-  background: var(--primary);
+  background: var(--light)!important;
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow);
 }
+
+.product-slider {
+      width: auto!important;
+			height: auto!important;
+			overflow: ;}
+.product-slider img{
+			width:auto!important;
+		}
