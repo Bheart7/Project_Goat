@@ -13,13 +13,24 @@ html{
 
 body{
   background: #ccc;
+  font-size: 16px;
   margin: 10px ;
   line-height: 1.4;
 }
+
+h1,h2,h3,h4,h5,h6{
+  font-family:Poppins;
+}
+
+p{
+  font-family:Roboto;
+}
+
 .btn{
   background: var(--dark);
   color: var(--light);
   padding: 0.6rem 1.6rem;
+  font-family:Poppins;
   text-decoration: none;
   border: 0;
 }
@@ -28,35 +39,21 @@ img{
   max-width: 100%;
 }
 
+.navbar-default{
+  background:#fff;
+  border:0;
+  font-family:Poppins;
+}
+
+.navbar-brand{
+  font-size:20px;
+  color:#fff !important;
+  font-weight:bold;
+}
+
 wrapper{
   display: grid;
   grid-gap: 20px;
-}
-
-.main-nav ul{
-  display: grid;
-  grid-gap: 20px;
-  padding: 0;
-  list-style: none;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.main-nav a {
-  background: var(--primary);
-  display: block;
-  text-decoration: none;
-  padding: 0.8rem;
-  text-align: center;
-  color: var(--dark);
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  box-shadow: var(--shadow);
-
-}
-
-.main-nav a:hover {
-  background: var(--dark);
-  color: var(--light);
 }
 
  .top-container{
@@ -109,31 +106,6 @@ wrapper{
   text-align: center;
 }
 
-.slider{
-  width: 1500px;
-  height: 400px;
-  background: url(./image/logo.png);
-  animation: slide 20s infinite;
-}
-@keyframes slide{
-  20%{
-    background: url(./image/logo.png);
-  }
-  40%{
-    background: url(./image/iphone.jpg);
-  }
-  60%{
-    background: url(./image/acer.jpg);
-  }
-  80%{
-    background: url(./image/aquaman.png);
-  }
-  100%{
-    background: url(./image/Q.jpg);
-  }
-
-}
-
 .boxes{
   margin-top: 20px;
   display: block;
@@ -149,7 +121,17 @@ wrapper{
 .product-slider {
       width: auto!important;
 			height: auto!important;
-			overflow: ;}
+}
 .product-slider img{
 			width:auto!important;
-		}
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color:var(--primary) ;
+  text-align: center;
+  background:var(--dark);
+  text-decoration: none!important;
+  list-style: none!important;
+}
