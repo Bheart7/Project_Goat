@@ -7,7 +7,6 @@
 
 html{
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   color:var(--dark);
 }
 
@@ -46,9 +45,8 @@ img{
 }
 
 .navbar-brand{
-  font-size:20px;
-  color:#fff !important;
-  font-weight:bold;
+  padding-bottom: 15px;
+
 }
 
 wrapper{
@@ -129,11 +127,16 @@ wrapper{
 footer{
   padding: 20px;
   margin-top: 20px;
-  color:var(--primary) ;
+  color:#000;
   text-align: center;
-  background:var(--dark);
-  text-decoration: none!important;
-  list-style: none!important;
+  background:#fff;
+}
+
+footer p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer img{
+  margin-bottom: 30px;
 }
 
 @media(max-width:700px){
