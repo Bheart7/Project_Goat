@@ -4,6 +4,11 @@
      duration: 2000,
      origin:'bottom'
    })
+   sr.reveal('.Blackcase',{
+     duration: 2000,
+     origin:'top',
+     distance:'300px'
+   });
    sr.reveal('.showcase-left',{
      duration: 2000,
      origin:'top',
@@ -21,7 +26,7 @@
    });
    sr.reveal('.topcase-right',{
      duration: 2000,
-     origin:'top',
+     origin:'right',
      distance:'300px'
    });
    sr.reveal('.btn',{
