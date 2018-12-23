@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title>i-Mart | Welcome</title>
+  <style>
+  :root{
+  --primary:#ddd;
+  --dark:#333;
+  --light:#fff;
+  --shadow:0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--dark);
+}
+
+body{
+  background: #ccc;
+  margin: 10px ;
+  line-height: 1.4;
+}
+.btn{
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.6rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+wrapper{
+  display: grid;
+  grid-gap: 20px;
+}
+
+.main-nav ul{
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+ .top-container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+  'showcase showcase sidebox-a'
+  'showcase showcase sidebox-b'
+
+}
+
+.showcase{
+  grid-area: showcase;
+  min-height: 290px;
+  background-image: url(image/theater.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  box-shadow: var(--shadow);
+
+}
+.showcase h4{
+  color: var(--light);
+  text-align: left;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.sidebox{
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.sidebox-a{
+  grid-area: sidebox-a;
+}
+
+.sidebox-b{
+  grid-area: sidebox-b;
+}
+
+.slider{
+  width: 1500px;
+  height: 400px;
+  background: url(./image/logo.png);
+  animation: slide 20s infinite;
+}
+@keyframes slide{
+  20%{
+    background: url(./image/logo.png);
+  }
+  40%{
+    background: url(./image/iphone.jpg);
+  }
+  60%{
+    background: url(./image/acer.jpg);
+  }
+  80%{
+    background: url(./image/aquaman.png);
+  }
+  100%{
+    background: url(./image/Q.jpg);
+  }
+
+}
+
+.boxes{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:;
+}
+
+.box{
+  background: var(--primary);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navigation  -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Festive Offers</a></li>
+        <li><a href="#">Q-pay</a></li>
+        <li><a href="#">Customer service</a></li>
+        <li><a href="#">Sign up</a></li>
+      </ul>
+    </nav>
+    <!-- slider -->
+    <div class="slider"></div>
+    <!-- Top Container -->
+  <section class="top-container">
+       <header class="showcase">
+           <h4>Book movie tickets and get up to
+               20% off.</h4>
+           <a href="" class="btn">Book Now</a>
+       </header>
+         <div class="sidebox sidebox-a"><a href="#"><img src="image/kindle.jpg" alt=""></a></div>
+         <div class="sidebox sidebox-b">
+           <h4>Sign in for a better experience</h4>
+           <a href="" class="btn">Sign in</a>
+         </div>
+
+
+        <!-- <a href="#" class="btn"><i class="fas fa-chevron-left fa-4x"></i></a> -->
+        <!-- <a href="#" class="btn"><i class="fas fa-chevron-right fa-4x"></i></a> -->
+    </section>
+    <secion class="boxes">
+      <div class="box">
+        <h4>Deal of the day</h4>
+        <a href="" class="btn">See more details</a>
+      </div>
+      <div class="box">
+        <h4>Latest Mobiles</h4>
+        <a href="" class="btn">Buy Now</a>
+      </div>
+      <div class="box">
+        <h4>Upto 50% off | Men's Winterwear</h4>
+        <a href="" class="btn">Buy Now</a>
+      </div>
+      <div class="box">
+        <h4>Laptops</h4>
+        <a href="" class="btn">Buy Now</a>
+      </div>
+      <div class="box">
+        <h4>Books</h4>
+        <a href="" class="btn">Buy Now</a>
+      </div>
+      <!--Footer  -->
+      <footer>
+        <p>i-Mart &copy; 2018</p>
+      </footer>
+
+    </secion>
+
+  </div>
+  <!-- <p>
+    <form method="post">{% csrf_token %}
+      <label for="name">Username</label>
+      <input type="text" name="firstname" id="name">
+      <br>
+      <label for="security">Password</label>
+      <input type="password" name="lastname" id="security">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </p>  --> 
+
+</body>
+</html>
