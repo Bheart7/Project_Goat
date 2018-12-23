@@ -140,6 +140,9 @@ footer img{
 }
 
 @media(max-width:700px){
+  body{
+    padding-top: 5rem;
+  }
   .top-container{
     grid-template-areas:
     'showcase showcase'
