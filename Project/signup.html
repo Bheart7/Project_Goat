@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign Up</title>
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+  max-width:500px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+.button{
+background-color:black;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+form{
+  size: 50px 100px;
+}
+</style>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="owl.theme.default.min.css">
+
+</head>
+<body>
+  <!-- Navigation  -->
+  <header>
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light">
+        <a class="navbar-brand " href="project.html"><img src="img/logoT.png" alt="i-Mart"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <form class="form-inline col-lg-6 mt-2 mt-md-0  offset-lg-3">
+            <input class="form-control col-lg-9 mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="offers.html">Offers <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+
+<form action="/action_page.php">
+  <div class="container">
+    <br><br><br>
+    <h4>Fill up the form</h4>
+   
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="firstname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter Your First Name" name="first name" required>
+
+    <label for="lastname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Your Last Name" name="last nanme" required>
+
+    <label for="phnumber"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Your Phone Number" name="phnumber" required>
+
+   
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+   
+    <hr>
+    
+
+    <button type="resister" class="btn btn-success">Resister</button>
+  </div>
+  
+  
+</form>
+ 
+
+      <!--Footer  -->
+      <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p><img src="img/logoT.png" alt=""> &copy; 2017-2018 Company, Inc.  <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </secion>
+
+  </div>
+
+  <script src="bootstrap.min.js"></script>
+  <script src="jquery.slim.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="popper.min.js"></script>
+</body>
+</html>
