@@ -20,7 +20,10 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-family:Poppins;
 }
-
+a{
+  text-decoration:none;
+  color: #000;
+}
 p{
   font-family:Roboto;
 }
@@ -123,7 +126,6 @@ wrapper{
 .product-slider img{
 			width:auto!important;
 }
-
 footer{
   padding: 20px;
   margin-top: 20px;
@@ -140,9 +142,6 @@ footer img{
 }
 
 @media(max-width:700px){
-  body{
-    padding-top: 5rem;
-  }
   .top-container{
     grid-template-areas:
     'showcase showcase'
